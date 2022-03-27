@@ -1,0 +1,596 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+body {
+	font-family: 'Fredoka', sans-serif;
+	background-color: #d61a57;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: .3fr 3fr .5fr;
+}
+/*Inicio header*/
+header{
+	padding: 5px;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: 1fr;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	position: sticky;
+	top: 0;
+	background-color: #d61a57;
+}
+
+.menu__nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.nav__ul{
+	display: inline-block;
+	list-style: none;
+}
+
+.nav__ul li {
+	border-radius: 5px;
+	margin: 1px 5px 0px 0px;
+}
+
+.nav__ul li a {
+	padding: 2px 5px;
+	font-size: .8rem;
+	display: block;
+	text-decoration: none;
+	background-color: #ffbad8;
+	color: black;
+	border-radius: 5px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/*Fin header*/
+
+.b {
+	border: 1px solid black;
+}
+
+.img__logo {
+	height: 80px;
+}
+
+/* Inicio contenido manin*/
+#contenido__main {
+	background-image: url(https://f.vividscreen.info/soft/5fd8414f8b1962b432d5de9b502c2c71/Colorful-Nails-1920x1200.jpg);
+	background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+	padding: 10px;
+}
+
+.main__section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0 30px;
+}
+
+.section__title {
+	font-size: 1.7rem;
+	color: white;
+	text-shadow: 3px 3px 0px black, 2px 2px 0px black, 1px 1px 0px black;
+	text-decoration: underline;
+	text-align: center;
+}
+
+.section__p {
+	font-size: 1.1rem;
+	color: white;
+	font-weight: 800;
+	background-color: rgba(0, 0, 0,0.6);
+	border-radius: 15px;
+	text-align: justify;
+	padding: 15px;
+	margin-top: 5px;
+}
+/*Fin contenido main*/
+/*Contenido Nosotros*/
+
+.main__section h2{
+	width: 100%;
+	align-self: center;
+	margin-bottom: 15px;
+}
+
+.nosotros__vid {
+	display: grid;
+	justify-items: center;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.nosotros__vid iframe {
+	width: 100%;
+}
+
+.img__mapa {
+	width: 100%;
+}
+/*Fin contenido nosotros*/
+/*Contenido galeria*/
+
+.main__section__galeria {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.section__img {
+	width: 100%;
+	margin: 3px 0px;
+}
+
+#body__galeria {
+	font-family: 'Fredoka', sans-serif;
+	background-color: #d61a57;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: .1fr 3fr .3fr;	
+}
+
+/*Fin contenido galeria*/
+/*Inicio Footer*/
+
+footer{
+	padding: 15px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: .5fr 1fr;
+	justify-content:center;
+	align-items: center;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	grid-template-areas: "redes redes""contacto logo";
+}
+
+.footer__redesDiv{grid-area: redes;} .footer__contacto{grid-area: contacto;} .footer__logo{grid-area: logo;}
+
+.footer__redesDiv {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(2,1fr);
+	grid-template-areas: "titulo titulo titulo" "instagram facebook twitter";
+}
+
+.titulo{grid-area: titulo;} .instagram{grid-area: instagram;} .facebook{grid-area: facebook;} .twitter{grid-area: twitter;}
+
+.footer__redesDiv a {
+	text-decoration: none;
+	color: black;
+	background-color: #ffbad8;
+	margin: 1px;
+	border: 1px solid black;
+	font-weight: bolder;
+	font-size: 1rem;
+	text-align: center;
+	border-radius: 40%;
+	margin-top: 5px;
+	justify-self: center;
+	width: 80%;
+}
+
+.footer__contacto {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	padding: 5px;
+}
+
+footer h3 {
+	text-decoration: underline;
+	text-align: center;
+	font-size: 1.1rem;
+}
+
+
+.footer__contacto p {
+	text-align: center;
+}
+
+.footer__logo a {
+	display: block;
+}
+
+.footer__logo a img{
+	text-align: center;
+}
+
+/*Fin contenido Footer*/
+/*Contenido Turnos*/
+
+.main__section h2 {
+	margin: 7px 0px 7px 0px;
+	font-size: 1.3rem;
+	text-align: center;
+	color: white;
+	background-color: rgba(0, 0, 0,0.6);
+	border-radius: 15px;
+	width: 50%;
+}
+
+.form__turnos {
+	margin-top: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+.form__table {
+	text-align: center;
+	border: 2px solid rgba(0,0,0,0.9);
+	margin: auto;
+	width: 100%;
+	color: white;
+	background-color: rgba(0, 0, 0,0.6);
+}
+
+.form__turnos select {
+	background-color: #ffbad8;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.btn__submit {
+	color: black;
+	background-color: #ffbad8;
+	text-transform: bold;
+	font-size: .8rem;
+	height: 30px;
+	border-radius: 5px;
+	width: 40%;
+	margin: 5px 5px;
+}
+/*Fin contenido turnos*/
+/*Contenido de Contacto*/
+.form__contacto {
+	text-align: center;
+}
+
+.form__contacto__legend {
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-shadow: 3px 3px 0px black, 2px 2px 0px black, 1px 1px 0px black;
+	color: white;
+}
+
+.form__contacto fieldset{
+	margin-top: 15px;
+	border: 1px solid black;
+}
+
+.contacto__label {
+	font-weight: bolder;
+}
+
+.input__contacto {
+	background-color: #ffbad8;
+	text-align: center;
+	margin: 5px;
+	width: 75%;
+	height: 25px;
+	font-size: .7rem;
+	margin: top 20px;
+}
+
+.form__contacto select {
+	background-color: #ffbad8;
+	width: 25%;
+	height: 30px;
+	margin-left: 10px;
+	text-align: center;
+}
+
+.form__contacto textarea {
+	background-color: #ffbad8;
+	width: 90%;
+	margin-top: 15px;
+	font-size: .7rem;
+	text-align: center;
+}
+
+.input__radio {
+	margin-right: 2px;
+}
+/*Fin contenido de contacto*/
+
+/*COMIENZO MEDIA 768PX*/
+@media (min-width: 768px) {
+	body {
+		grid-template-rows: .5fr 3fr .5fr;
+	}
+
+	/*Inicio header*/
+	header{
+		padding: 15px;
+	}
+
+	.nav__ul li a {
+		font-size: .8rem;
+	}
+	/*Fin header*/
+	.img__logo {
+		height: 90px;
+	}
+	
+	/* Inicio contenido main*/
+
+	.section__title {
+		font-size: 2.3rem;
+	}
+	
+	.section__p {
+		font-size: 1.3rem;
+	}
+	/*Fin contenido main*/
+	/*Contenido nosotros*/
+	.nosotros__mapa{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 5fr;
+		justify-items: center;
+	}
+	
+	.nosotros__mapa h2 {
+		width: 70%;
+	}
+
+	.nosotros__vid h2 {
+		margin: 15px;
+	}
+	/*Fin contenido nosotros*/
+	/*Contenido galeria*/
+
+	#body__galeria {
+		grid-template-rows: .1fr 5fr .1fr;
+	}
+
+	.main__section__galeria {
+		flex-direction: row;
+	}
+	
+
+	.section__img {
+		margin: 5px 5px;
+		max-width: min-content;
+	}
+
+	/*Fin contenido galeria*/
+	/*Inicio Footer*/	
+	.footer__redesDiv a {
+		margin: 2px;
+		border-radius: 50%;
+		width: 70%;
+		padding: 5px;
+	}
+
+	footer h3 {
+		font-size: 1.7rem;
+	}
+
+	footer p {
+		font-size: 1.2rem;
+	}
+
+	/*Fin contenido Footer*/
+	/*Contenido Turnos*/
+	
+	.main__section h2 {
+		margin: 7px 0px 15px 0px;
+		font-size: 1.7rem;
+		padding: 5px;
+	}
+	
+	.form__turnos {
+		width: 70%;
+	}
+	
+	.form__table {
+		height: 100px;
+	}
+	
+	.form__turnos select {
+		font-size: 1.2rem;
+		width: 40%;
+	}
+	
+	.btn__submit {
+		font-size: 1.2rem;
+		height: 40px;
+		margin: 5px;
+	}
+	/*Fin contenido turnos*/
+	/*Contenido de Contacto*/
+	.form__contacto__legend {
+		font-size: 1.8rem;
+	}
+	
+	.form__contacto fieldset{
+		margin-top: 25px;
+	}
+	
+	.input__contacto {
+		height: 35px;
+		font-size: 1.2rem;
+		font-weight: bolder;
+	}
+	
+	.form__contacto select {
+		width: 25%;
+		height: 40px;
+		border-radius: 15px;
+	}
+	
+	.form__contacto textarea {
+		font-size: 1.2rem;
+	}
+	
+	.section__font{
+		font-size: 1.3rem;
+	}
+
+	.input__radio {
+		font-size: 1.4rem;
+	}
+	/*Fin contenido de contacto*/
+}
+
+/*COMIENZO MEDIA 1024*/
+@media (min-width:1024px) {
+	/*Inicio header*/
+	header{
+		padding: 15px;
+	}
+
+	.nav__ul li {
+		margin: 0px 3px;
+		display: inline-block;
+	}
+	
+	.nav__ul li a {
+		padding: 3px 6px;
+		font-size: 1.1rem;
+	}
+	
+	/*Fin header*/
+	.img__logo {
+		height: 100px;
+	}
+	/* Inicio contenido main*/
+	#contenido__main {
+		height: auto;
+	}
+	.section__title {
+		font-size: 2rem;
+	}
+	/*Fin contenido main*/
+	/*Contenido galeria*/
+	
+	.main__section__galeria {
+		flex-direction: row;
+	}
+
+	.section__title{
+		text-align: center;
+	}
+
+	.section__img {
+		margin: 5px 5px;
+		max-width: fit-content;
+	}
+	
+	#body__galeria {
+		grid-template-rows: .1fr 6fr .1fr;
+	}
+	
+	/*Fin contenido galeria*/
+	/*Contenido nosotros*/
+	.nosotros__mapa{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 5fr;
+		justify-items: center;
+	}
+	/*Fin contenido nosotros*/
+	/*Inicio Footer*/
+	footer{
+		position: relative;
+		bottom: 0;
+		grid-template-columns: repeat(4,1fr);
+		grid-template-rows: 1fr;
+		grid-template-areas: "logo redes redes contacto";
+	}
+
+	.footer__redesDiv a {
+		font-size: 1.3rem;
+		border-radius: 45%;
+		width: 60%;
+	}
+	
+	footer h3 {
+		font-size: 1.7rem;
+	}
+	
+	.footer__contacto p {
+		font-size: 1.3rem;
+	}
+	
+	.footer__logo {
+		display: flex;
+		justify-content: center;
+	}
+	/*Fin contenido Footer*/
+	/*Contenido Turnos*/
+	
+	.main__section h2 {
+		margin-top: 15px;
+		font-size: 1.2rem;
+	}
+	
+	.form__turnos {
+		margin-top: 20px;
+		width: 50%;
+	}
+
+	.form__turnos select {
+		font-size: 1.2rem;
+	}
+	
+	.btn__submit {
+		font-size: 1.2rem;
+		height: 40px;
+		width: 30%;
+	}
+	/*Fin contenido turnos*/
+	/*Contenido de Contacto*/
+
+	.form__contacto__legend {
+		font-size: 2rem;
+	}
+	
+	.contacto__label {
+		font-weight: bolder;
+	}
+	
+	.input__contacto {
+		width: 85%;
+		height: 35px;
+		font-size: 1.3rem;
+	}
+	
+	.form__contacto select {
+		height: 40px;
+		font-size: 1.4rem;
+	}
+	
+	.form__contacto textarea {
+		font-size: 1.4rem;
+	}
+	
+	.input__radio {
+		margin-right: 2px;
+		height: 20px;
+	}
+
+	.section__font{
+		font-size: 1.4rem;
+	}
+	/*Fin contenido de contacto*/
+}

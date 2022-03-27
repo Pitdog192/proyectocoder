@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Arroquigaray</title>
+	<link rel="shortcut icon" href="../imagenes/favicon/favicon-32x32.png" type="image/png" />
+		<!--Google Fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+		<!--Fin Google Fonts-->
+	<link rel="stylesheet" type="text/css" href="../estilos/estilos.css">
+</head>
+<body>
+<!-- Inicio del header -->
+<header id="header">
+	<a href="../index.html"><img class="img__logo"  src="../imagenes/pngwing.com (1).png" alt="imagen de marca"></a>
+	<nav class="menu__nav">
+		<ul class="nav__ul">
+			<li><a class="b" href="../index.html">Inicio</a></li>
+			<li><a class="b" href="nosotros.html">Nosotros</a></li>
+			<li><a class="b" href="galeria.html">Galeria</a></li>
+			<li><a class="b" href="turnos.html">Tunos</a></li>
+			<li><a class="b" href="contacto.html">Contacto</a></li>
+		</ul>
+	</nav>
+</header>
+
+<!-- Inicio sección contacto -->
+	<main id="contenido__main">
+		<section class="main__section">
+				<h1 class="section__title">Contacto</h1>
+				<!-- Formulario de contacto-->
+				<form class="form__contacto">
+					<fieldset>
+						<legend class="form__contacto__legend">Contactenos</legend>
+
+							<!--Inicio inputs formulario -->
+							<input class="input__contacto b" type="text" name="nombre" placeholder="Nombre"><br>
+							<input class="input__contacto b" type="text" name="apellido" placeholder="Apellido"><br>
+							<input class="input__contacto b" type="email" name="email" placeholder="Email"><br>
+							<label class="section__font" for="acepta">¿Acepta recibir promociones por email?</label>
+								<select class="b" name="acepta">
+									<option value="0">Si</option>
+									<option value="1">No</option>
+								</select><br>	
+							<textarea class="b" rows="6" cols="30" placeholder="Dejanos tu opinion!"></textarea><br>
+
+					<!--Puntuación -->
+					<fieldset>
+						<legend class="form__contacto__legend">Puntuanos</legend>
+							<label class="section__font" for="0">0:</label>
+							<input class="input__radio" type="radio" name="0" value="0">
+							<label class="section__font" for="1">1:</label>
+							<input class="input__radio" type="radio" name="1" value="1">
+							<label class="section__font" for="2">2:</label>
+							<input class="input__radio" type="radio" name="2" value="2">
+							<label class="section__font" for="3">3:</label>
+							<input class="input__radio" type="radio" name="3" value="3">
+							<label class="section__font" for="4">4:</label>
+							<input class="input__radio" type="radio" name="4" value="4">
+							<label class="section__font" for="5">5:</label>
+							<input class="input__radio" type="radio" name="5" value="5"><br>
+					</fieldset>
+
+							<!-- Botones -->
+							<input class="btn__submit b" type="submit" name="Enviar">
+							<input class="btn__submit b" type="reset" name="Limpiar Formulario">	
+				</form>	
+		</section>
+	</main>
+	<!--Inicio del footer-->
+	<footer id="footer">
+		<div class="footer__logo">
+			<a href="index.html"><img class="img__logo" src="../imagenes/pngwing.com (1).png" alt="imagen de marca"></a>
+		</div>
+		<div class="footer__redesDiv">
+			<h3 class="titulo">Redes Sociales</h3>
+			<a class="instagram" href="https://instagram.com">Instagram</a>
+			<a class="facebook" href="https://facebook.com">Facebook</a>
+			<a class="twitter" href="https://twitter.com">Twitter</a>
+		</div>
+		<div class="footer__contacto">
+			<h3>Contacto</h3>
+			<p>Télefono: 123123123</p>
+			<p>Dirección: Asd 412</p>
+		</div>
+		</div>
+	</footer>
+</body>
+</html>
