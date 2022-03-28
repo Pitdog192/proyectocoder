@@ -13,6 +13,7 @@ body {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: .3fr 3fr .5fr;
+	height: 100vh;
 }
 /*Inicio header*/
 header{
@@ -23,8 +24,10 @@ header{
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	position: sticky;
+	position: -webkit-sticky;
 	top: 0;
-	background-color: #d61a57;
+	background: rgb(148,0,122);
+	background: linear-gradient(90deg, rgba(148,0,122,1) 0%, rgba(255,0,219,1) 50%, rgba(148,0,122,1) 100%);
 }
 
 .menu__nav {
@@ -53,6 +56,12 @@ header{
 	border-radius: 5px;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+.nav__ul li a:hover {
+	color: white;
+	background: rgb(148,0,122);
+	background: linear-gradient(90deg, rgba(148,0,122,1) 0%, rgba(255,0,219,1) 50%, rgba(148,0,122,1) 100%);
 }
 
 /*Fin header*/
@@ -159,6 +168,8 @@ footer{
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	grid-template-areas: "redes redes""contacto logo";
+	background: rgb(148,0,122);
+	background: linear-gradient(90deg, rgba(148,0,122,1) 0%, rgba(255,0,219,1) 50%, rgba(148,0,122,1) 100%);
 }
 
 .footer__redesDiv{grid-area: redes;} .footer__contacto{grid-area: contacto;} .footer__logo{grid-area: logo;}
@@ -185,6 +196,12 @@ footer{
 	margin-top: 5px;
 	justify-self: center;
 	width: 80%;
+}
+
+.footer__redesDiv a:hover {
+	color: white;
+	background: rgb(148,0,122);
+	background: linear-gradient(90deg, rgba(148,0,122,1) 0%, rgba(255,0,219,1) 50%, rgba(148,0,122,1) 100%);
 }
 
 .footer__contacto {
@@ -257,6 +274,13 @@ footer h3 {
 	width: 40%;
 	margin: 5px 5px;
 }
+
+.btn__submit:hover {
+	color: white;
+	background: rgb(148,0,122);
+	background: linear-gradient(90deg, rgba(148,0,122,1) 0%, rgba(255,0,219,1) 50%, rgba(148,0,122,1) 100%);
+}
+
 /*Fin contenido turnos*/
 /*Contenido de Contacto*/
 .form__contacto {
