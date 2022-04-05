@@ -1,62 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Arroquigaray</title>
-	<link rel="shortcut icon" href="imagenes/favicon/favicon-32x32.png" type="image/png" />
-	<!--Google Fonts-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
-	<!--Fin Google Fonts-->
-	<link rel="stylesheet" type="text/css" href="estilos/estilos.css">
-</head>
-<body>
-<!-- Inicio del header -->
-	<header id="header">
-		<a href="index.html"><img class="img__logo"  src="imagenes/pngwing.com (1).png" alt="imagen de marca"></a>
-		<nav class="menu__nav">
-			<ul class="nav__ul">
-				<li><a class="b" href="index.html">Inicio</a></li>
-				<li><a class="b" href="paginas/nosotros.html">Nosotros</a></li>
-				<li><a class="b" href="paginas/galeria.html">Galeria</a></li>
-				<li><a class="b" href="paginas/turnos.html">Tunos</a></li>
-				<li><a class="b" href="paginas/contacto.html">Contacto</a></li>
-			</ul>
-		</nav>
-	</header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arroquigaray</title>
+    <link rel="shortcut icon" href="imagenes/favicon/favicon-32x32.png" type="image/png"/>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet"/>
+    <!--Fin Google Fonts-->
+    <!--Inicio Bootstrap-->
+    <link rel="stylesheet" href="estilos/css/bootstrap-grid.min.css" />
+    <script src="js/bootstrap.min.js"></script>
+    <!--Fin Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="estilos/estilos.css" />
+  </head>
+  <body class="container-fluid">
+    <!-- Inicio del header -->
+    <header class="row">
+     	<a href="index.html" class="col-lg-3 col-md-3">
+		  <img class="img__logo" src="imagenes/pngwing.com (1).png" alt="imagen de marca"/>
+		</a>
+      <nav class="menu__nav col-lg-7 col-md-5 ms-auto">
+        <ul class="nav__ul">
+          <li><a class="b" href="index.html">Inicio</a></li>
+          <li><a class="b" href="paginas/nosotros.html">Nosotros</a></li>
+          <li><a class="b" href="paginas/galeria.html">Galeria</a></li>
+          <li><a class="b" href="paginas/turnos.html">Tunos</a></li>
+          <li><a class="b" href="paginas/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<!-- Inicio contenido-->
-	<main id="contenido__main">
-		<section class="main__section">
-				<h1 class="section__title">Inicio</h1>
-				<p class="section__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores id provident architecto. Accusantium quo, eum accusamus laborum magni ratione sapiente ea perspiciatis minima explicabo commodi, nemo, deserunt molestias illum beatae.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. A accusamus dignissimos iste harum necessitatibus est, dolor quam velit? Quibusdam, cum dignissimos quia ducimus illum rem eos vitae at cupiditate impedit?
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, dolorem! Reiciendis, sapiente nobis assumenda pariatur deleniti inventore obcaecati neque expedita in, voluptates aliquid. Nam cumque, illum cum nobis corrupti doloremque!
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur non cupiditate quos laboriosam nam! Dolores, fugiat nemo autem repellendus necessitatibus fugit quaerat dolor? Deserunt cum culpa, reiciendis veniam ad id.<br>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus eligendi incidunt reprehenderit ipsa autem eos accusamus rerum earum. Nemo quam suscipit sunt esse dolore rerum ex obcaecati velit perferendis minima?
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium id corporis et doloremque ducimus illo, unde atque mollitia quam magnam quo maxime eius aperiam sequi ad? Soluta quia dolore eveniet!
-				</p>
-		</section>
-	</main>	
+    <!-- Inicio contenido-->
+    <main id="contenido__main" class="row">
+      <section class="main__section col-lg-12 col-md-12">
+        <h1 class="section__title">Inicio</h1>
+        <p class="section__p">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores id
+          provident architecto. Accusantium quo, eum accusamus laborum magni
+          ratione sapiente ea perspiciatis minima explicabo commodi, nemo,
+          deserunt molestias illum beatae. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. A accusamus dignissimos iste harum
+          necessitatibus est, dolor quam velit? Quibusdam, cum dignissimos quia
+          ducimus illum rem eos vitae at cupiditate impedit? Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Doloribus, dolorem! Reiciendis,
+          sapiente nobis assumenda pariatur deleniti inventore obcaecati neque
+          expedita in, voluptates aliquid. Nam cumque, illum cum nobis corrupti
+          doloremque! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Aspernatur non cupiditate quos laboriosam nam! Dolores, fugiat nemo
+          autem repellendus necessitatibus fugit quaerat dolor? Deserunt cum
+          culpa, reiciendis veniam ad id.<br />
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+          eligendi incidunt reprehenderit ipsa autem eos accusamus rerum earum.
+          Nemo quam suscipit sunt esse dolore rerum ex obcaecati velit
+          perferendis minima? Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Laudantium id corporis et doloremque ducimus illo, unde atque
+          mollitia quam magnam quo maxime eius aperiam sequi ad? Soluta quia
+          dolore eveniet!
+        </p>
+      </section>
+    </main>
 
-	<!--Inicio del footer-->
-	<footer id="footer">
-	</div>
-	<div class="footer__redesDiv">
-		<h3 class="titulo">Redes Sociales</h3>
-		<a class="instagram" href="https://instagram.com">Instagram</a>
-		<a class="facebook" href="https://facebook.com">Facebook</a>
-		<a class="twitter" href="https://twitter.com">Twitter</a>
-	</div>
-	<div class="footer__contacto">
-		<h3>Contacto</h3>
-		<p>Télefono: 123123123</p>
-		<p>Dirección: Asd 412</p>
-	</div>
-	<div class="footer__logo">
-		<a href="index.html"><img class="img__logo" src="imagenes/pngwing.com (1).png" alt="imagen de marca"></a>
-	</footer>
-</body>
+    <!--Inicio del footer-->
+    <footer id="footer" class="row">
+      <div class="footer__logo col-lg-3 col-md-3">
+        <a href="index.html">
+			<img class="img__logo" src="imagenes/pngwing.com (1).png" alt="imagen de marca"/>
+		</a>
+      </div>
+      <div class="footer__redesDiv col-lg-6 col-md-6">
+        <h3 class="titulo">Redes Sociales</h3>
+        <a class="instagram" href="https://instagram.com">Instagram</a>
+        <a class="facebook" href="https://facebook.com">Facebook</a>
+        <a class="twitter" href="https://twitter.com">Twitter</a>
+      </div>
+      <div class="footer__contacto col-lg-3 col-md-3">
+        <h3>Contacto</h3>
+        <p>Télefono: 123123123</p>
+        <p>Dirección: Asd 412</p>
+      </div>
+    </footer>
+  </body>
 </html>

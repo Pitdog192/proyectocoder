@@ -5,18 +5,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Arroquigaray</title>
 	<link rel="shortcut icon" href="../imagenes/favicon/favicon-32x32.png" type="image/png" />
-		<!--Google Fonts-->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
-		<!--Fin Google Fonts-->
+	<!--Google Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+	<!--Fin Google Fonts-->
 	<link rel="stylesheet" type="text/css" href="../estilos/estilos.css">
+	<!--Inicio Bootstrap-->
+	<link rel="stylesheet" href="../estilos/css/bootstrap-grid.min.css">
+	<script src="../js/bootstrap.min.js"></script>
+	<!--Fin Bootstrap-->
 </head>
-<body>
+<body class="container-fluid">
 <!-- Inicio del header -->
-<header id="header">
-	<a href="../index.html"><img class="img__logo"  src="../imagenes/pngwing.com (1).png" alt="imagen de marca"></a>
-	<nav class="menu__nav">
+<header id="header" class="row">
+	<a href="../index.html" class="col-lg-3 col-md-3"><img class="img__logo"  src="../imagenes/pngwing.com (1).png" alt="imagen de marca"></a>
+	<nav class="menu__nav col-lg-7 col-md-7 ms-auto">
 		<ul class="nav__ul">
 			<li><a class="b" href="../index.html">Inicio</a></li>
 			<li><a class="b" href="nosotros.html">Nosotros</a></li>
@@ -28,7 +32,7 @@
 </header>
 
 <!--Inicio contenido de turnos-->
-	<main id="contenido__main">
+	<main id="contenido__main" class="row">
 		<section class="main__section">
 				<h1 class="section__title">Turnos disponibles</h1>
 				<h2>Dias y horarios de atención:</h2>
@@ -71,21 +75,20 @@
 	</main>
 	
 	<!--Inicio del footer-->
-	<footer id="footer">
-		<div class="footer__logo">
+	<footer id="footer" class="row">
+		<div class="footer__logo col-lg-3 col-md-3">
 			<a href="index.html"><img class="img__logo" src="../imagenes/pngwing.com (1).png" alt="imagen de marca"></a>
-		</div>
-		<div class="footer__redesDiv">
+		</div>	
+		<div class="footer__redesDiv col-lg-6 col-md-6">
 			<h3 class="titulo">Redes Sociales</h3>
 			<a class="instagram" href="https://instagram.com">Instagram</a>
 			<a class="facebook" href="https://facebook.com">Facebook</a>
 			<a class="twitter" href="https://twitter.com">Twitter</a>
 		</div>
-		<div class="footer__contacto">
+		<div class="footer__contacto col-lg-3 col-md-3">
 			<h3>Contacto</h3>
 			<p>Télefono: 123123123</p>
 			<p>Dirección: Asd 412</p>
-		</div>
 		</div>
 	</footer>
 </body>
