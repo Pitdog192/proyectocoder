@@ -6,63 +6,84 @@
 	<title>Arroquigaray</title>
 	<link rel="shortcut icon" href="../imagenes/favicon/favicon-32x32.png" type="image/png" />
 	<!--Google Fonts-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 	<!--Fin Google Fonts-->
-	<link rel="stylesheet" type="text/css" href="../estilos/estilos.css">
-	<!--Inicio Bootstrap-->
-	<link rel="stylesheet" href="../estilos/css/bootstrap-grid.min.css">
-	<script src="../js/bootstrap.min.js"></script>
+	<!--Inicio Bootstrap y mis estilos-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../Styles/estilos.css">
 	<!--Fin Bootstrap-->
-</head>
-<body id="body__galeria" class="container-fluid">
+</head> 
+<body>
 <!-- Inicio del header -->
-<header id="header" class="row">
-	<a href="../index.html" class="col-lg-3 col-md-3"><img class="img__logo"  src="../imagenes/pngwing.com (1).png" alt="imagen de marca"></a>
-	<nav class="menu__nav col-lg-7 col-md-7 ms-auto">
-		<ul class="nav__ul">
-			<li><a class="b" href="../index.html">Inicio</a></li>
-			<li><a class="b" href="nosotros.html">Nosotros</a></li>
-			<li><a class="b" href="galeria.html">Galeria</a></li>
-			<li><a class="b" href="turnos.html">Tunos</a></li>
-			<li><a class="b" href="contacto.html">Contacto</a></li>
-		</ul>
-	</nav>
+<header class="container-fluid">
+	<nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img class="imgLogo" src="../imagenes/pngwing.com (1).png" alt="imagen de marca"/></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a href="galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a href="turnos.html">Turnos</a>
+              </li>
+              <li class="nav-item">
+                <a href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 </header>
 
 
 <!--Inicio de galeria -->
-	<main id="contenido__main" class="row">
-		<h1 class="section__title">Galeria</h1>
-		<section class="main__section__galeria">
-			<img class="section__img" src="../imagenes/galeria/img_galeria_1.jpg" alt="Imagen de nuestros trabajos" title="Imagen de trabajos">
-			<img class="section__img" src="../imagenes/galeria/img_galeria_2.jpg" alt="Imagen de nuestros trabajos" title="Imagen de trabajos">
-			<img class="section__img" src="../imagenes/galeria/img_galeria_3.jpg" alt="Imagen de nuestros trabajos" title="Imagen de trabajos">
-			<img class="section__img" src="../imagenes/galeria/img_galeria_7.jpeg" alt="Imagen de nuestros trabajos" title="Imagen de trabajos">
-			<img class="section__img" src="../imagenes/galeria/img_galeria_4.jpg" alt="Imagen de nuestros trabajos" title="Imagen de trabajos">
-			<img class="section__img" src="../imagenes/galeria/img_galeria_5.jpg" alt="Imagen de nuestros trabajos" title="Imagen de trabajos">
-			<img class="section__img" src="../imagenes/galeria/img_galeria_6.jpg" alt="Imagen de nuestros trabajos" title="Imagen de trabajos">
-			<img class="section__img" src="../imagenes/galeria/img_galeria_8.jpg" alt="Imagen de nuestros trabajos" title="Imagen de trabajos">
+	<main class="container-fluid">
+		<section class="secGal">
+			<h1 class="titPrin">Galeria</h1>
+			<div class="container divGal">
+				<img src="../imagenes/galeria/img_galeria_1.jpg"  alt="Imagen de nuestros trabajos" title="Imagen de trabajos">
+				<img src="../imagenes/galeria/img_galeria_2.jpg"  alt="Imagen de nuestros trabajos" title="Imagen de trabajos">
+				<img src="../imagenes/galeria/img_galeria_3.jpg"  alt="Imagen de nuestros trabajos" title="Imagen de trabajos">
+				<img src="../imagenes/galeria/img_galeria_7.jpeg" alt="Imagen de nuestros trabajos" title="Imagen de trabajos">
+				<img src="../imagenes/galeria/img_galeria_4.jpg"  alt="Imagen de nuestros trabajos" title="Imagen de trabajos">
+				<img src="../imagenes/galeria/img_galeria_5.jpg"  alt="Imagen de nuestros trabajos" title="Imagen de trabajos">
+				<img src="../imagenes/galeria/img_galeria_6.jpg"  alt="Imagen de nuestros trabajos" title="Imagen de trabajos">
+				<img src="../imagenes/galeria/img_galeria_8.jpg"  alt="Imagen de nuestros trabajos" title="Imagen de trabajos">
+			</div>
 		</section>
 	</main>	
 
-	<!--Inicio del footer-->
-	<footer id="footer" class="row">
-		<div class="footer__logo col-lg-3 col-md-3">
-			<a href="index.html"><img class="img__logo" src="../imagenes/pngwing.com (1).png" alt="imagen de marca"></a>
-		</div>	
-		<div class="footer__redesDiv col-lg-6 col-md-6">
+    <!--Inicio del footer-->
+    <footer class="container-fluid">
+		<div class="row">
+		  <div class="col-lg-2 divLogo">
+			<a href="index.html"><img class="imgLogo" src="../imagenes/pngwing.com (1).png" alt="imagen de marca"/></a>
+		  </div>
+		  <div class="col-lg-4 ms-auto divRedes">
 			<h3 class="titulo">Redes Sociales</h3>
 			<a class="instagram" href="https://instagram.com">Instagram</a>
 			<a class="facebook" href="https://facebook.com">Facebook</a>
 			<a class="twitter" href="https://twitter.com">Twitter</a>
-		</div>
-		<div class="footer__contacto col-lg-3 col-md-3">
+		  </div>
+		  <div class="col-lg-4 divCont">
 			<h3>Contacto</h3>
 			<p>Télefono: 123123123</p>
 			<p>Dirección: Asd 412</p>
+		  </div>
 		</div>
-	</footer>
+	  </footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
