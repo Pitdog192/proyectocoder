@@ -161,6 +161,12 @@ body {
   background: #00851a;
 }
 
+main .secCon form .selectContacto, main .secTurnos table .selecTurnos {
+  background-color: #00e62e;
+  font-size: 1rem;
+  text-align: center;
+}
+
 main {
   min-height: 90vh;
   background-image: url(https://f.vividscreen.info/soft/5fd8414f8b1962b432d5de9b502c2c71/Colorful-Nails-1920x1200.jpg);
@@ -181,9 +187,9 @@ main .secInicio {
   padding: 0px 30px;
 }
 main .secInicio p {
-  text-align: justify;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
+  text-align: center;
   border-radius: 15px;
   padding: 15px;
   font-size: 1.1rem;
@@ -192,9 +198,9 @@ main .secNosotros {
   padding: 0px 5%;
 }
 main .secNosotros h2 {
-  text-align: center;
-  color: white;
   background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
   width: 40%;
   border-radius: 15px;
 }
@@ -204,6 +210,7 @@ main .secNosotros .divIframe {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 15px;
 }
 main .secNosotros .divIframe iframe {
   max-width: 100%;
@@ -214,7 +221,7 @@ main .secNosotros .divMapa {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 15px;
+  margin: 15px;
 }
 main .secNosotros .divMapa img {
   width: 60%;
@@ -250,22 +257,19 @@ main .secTurnos form {
   text-align: center;
 }
 main .secTurnos table {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
   text-align: center;
   border: 2px solid rgba(255, 255, 255, 0.9);
   margin: auto;
   width: 70%;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.6);
   padding: 15px;
   height: 15vh;
 }
-main .secTurnos table select {
-  background-color: #00e62e;
-  font-size: 1rem;
-  text-align: center;
+main .secTurnos table .selecTurnos {
   width: 40%;
 }
-main .secTurnos table select:hover {
+main .secTurnos table .selecTurnos:hover {
   transform: scale(1.1);
 }
 main .secTurnos table tr {
@@ -299,13 +303,10 @@ main .secCon form input:-ms-input-placeholder, main .secCon form textarea:-ms-in
 main .secCon form input::placeholder, main .secCon form textarea::placeholder {
   color: rgba(0, 0, 0, 0.7);
 }
-main .secCon form select {
-  background-color: #00e62e;
-  font-size: 1rem;
-  text-align: center;
+main .secCon form .selectContacto {
   width: 9%;
   border-radius: 20px;
 }
-main .secCon form select:hover {
+main .secCon form .selectContacto:hover {
   transform: scale(1.1);
 }/*# sourceMappingURL=estilos.css.map */

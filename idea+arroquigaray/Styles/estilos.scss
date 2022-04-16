@@ -43,6 +43,29 @@ body {
         background: #00851a;
     }
 }
+
+//Extend
+%select {
+    background-color: #00e62e;
+    font-size: 1rem;
+    text-align: center;
+}
+
+//Map
+$divNosotros:(  1: flex,
+                2: column,
+                3: $center,
+                4: $center,
+                5: $center,
+                6: 15px);
+
+//mixin con variable
+@mixin colores ($background, $color, $align) {
+    background-color: $background;
+    color: $color;
+    text-align: $align;
+}              
+                
 // FIN VARIOS
 //.........//
 
@@ -64,9 +87,7 @@ main {
     .secInicio{
         padding: 0px 30px;
         p{
-            text-align: justify;
-            background-color: $bgc;
-            color: $white;
+            @include colores($bgc, $white , $center );
             border-radius: 15px;
             padding: 15px;
             font-size: 1.1rem;
@@ -78,29 +99,28 @@ main {
     .secNosotros{
         padding: 0px 5%;
         h2 {
-            text-align: $center;
-            color: $white;
-            background-color: $bgc;
+            @include colores($bgc, $white , $center );
             width: 40%;
             border-radius: 15px;
         }
         .divIframe{
-            display: flex;
-            flex-direction: column;
-            justify-content: $center;
-            align-items: $center;
-            text-align: $center;
+            display: map-get($divNosotros, 1);
+            flex-direction: map-get($divNosotros, 2 );
+            justify-content: map-get($divNosotros, 3 );
+            align-items: map-get($divNosotros, 4 );
+            text-align: map-get($divNosotros, 5 );
+            margin: map-get($divNosotros, 6 );
             iframe {
                 max-width: 100%;
             }
         }
         .divMapa{
-            display: flex;
-            flex-direction: column;
-            justify-content: $center;
-            align-items: $center;
-            text-align: $center;
-            margin-top: 15px;
+            display: map-get($divNosotros, 1);
+            flex-direction: map-get($divNosotros, 2 );
+            justify-content: map-get($divNosotros, 3 );
+            align-items: map-get($divNosotros, 4 );
+            text-align: map-get($divNosotros, 5 );
+            margin: map-get($divNosotros, 6 );
             img {
                 width: 60%;
             }
@@ -146,18 +166,14 @@ main {
             text-align: $center;
             }
             table{
-                text-align: center;
+                @include colores($bgc,$white ,$center);
                 border: 2px solid rgba(255,255,255,0.9);
                 margin: auto;
                 width: 70%;
-                color: $white;
-                background-color: $bgc;
                 padding: 15px;
                 height: 15vh;
-                select {
-                    background-color: #00e62e;
-                    font-size: 1rem;
-                    text-align: center;
+                .selecTurnos {
+                    @extend %select;
                     width: 40%;
                     &:hover{
                         transform: scale(1.1);
@@ -194,10 +210,8 @@ main {
                     color: rgba(0, 0, 0,0.7);
                 }
             }
-            select{
-                background-color: #00e62e;
-                font-size: 1rem;
-                text-align: center;
+            .selectContacto{
+                @extend %select;
                 width: 9%;
                 border-radius: 20px;
                 &:hover{
