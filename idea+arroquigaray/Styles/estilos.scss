@@ -1,5 +1,4 @@
-@use 'headerFooter';
-
+@import 'headerFooter';
 
 $border: 1px solid black;
 $bgc:rgba(0, 0, 0,0.6);
@@ -91,6 +90,9 @@ main {
             border-radius: 15px;
             padding: 15px;
             font-size: 1.1rem;
+            a{
+                color: $white;
+            }
         }
     }
 
@@ -221,6 +223,7 @@ main {
         }
     }
 }
+
 
 
 
