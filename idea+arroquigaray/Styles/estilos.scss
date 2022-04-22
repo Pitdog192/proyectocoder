@@ -1,5 +1,8 @@
 @import 'headerFooter';
+<<<<<<< HEAD
 @import 'mediaQuerys';
+=======
+>>>>>>> 4a2c78bc8668733fc298c22fe84a2cf53caa95b1
 
 $border: 1px solid black;
 $bgc:rgba(0, 0, 0,0.6);
@@ -104,6 +107,7 @@ main {
             @include colores($bgc, $white , $center );
             border-radius: 15px;
             padding: 15px;
+<<<<<<< HEAD
             @extend %fnt;
             a{
                 color: $white;
@@ -117,6 +121,12 @@ main {
         }
         h5{
             text-align: $center;
+=======
+            font-size: 1.1rem;
+            a{
+                color: $white;
+            }
+>>>>>>> 4a2c78bc8668733fc298c22fe84a2cf53caa95b1
         }
     }
 

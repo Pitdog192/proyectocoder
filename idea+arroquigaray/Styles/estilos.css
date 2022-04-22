@@ -1,5 +1,6 @@
 @keyframes fondo_h_f {
   0% {
+<<<<<<< HEAD
     background: linear-gradient(122deg, #fedfdf 0%, #ffc3d6 5%, #ff9ebe 10%, #fa6f9b 15%, #fa6f9b 20%, #fa6f9b 25%, #fa6f9b 30%, #fa6f9b 35%, #fa6f9b 40%, #fa6f9b 45%, #fa6f9b 50%, #fa6f9b 55%, #fa6f9b 60%, #fa6f9b 65%, #fa6f9b 70%, #fa6f9b 75%, #fa6f9b 80%, #fa6f9b 85%, #fa6f9b 90%, #fa6f9b 95%, #fa6f9b 95%, #fa6f9b 100%); }
   2% {
     background: linear-gradient(122deg, #ffc3d6 0%, #fedfdf 5%, #ffc3d6 10%, #ff9ebe 15%, #fa6f9b 20%, #fa6f9b 25%, #fa6f9b 30%, #fa6f9b 35%, #fa6f9b 40%, #fa6f9b 45%, #fa6f9b 50%, #fa6f9b 55%, #fa6f9b 60%, #fa6f9b 65%, #fa6f9b 70%, #fa6f9b 75%, #fa6f9b 80%, #fa6f9b 85%, #fa6f9b 90%, #fa6f9b 95%, #fa6f9b 95%, #fa6f9b 100%); }
@@ -45,6 +46,29 @@
     background: linear-gradient(122deg, #fa6f9b 0%, #fa6f9b 5%, #fa6f9b 10%, #fa6f9b 15%, #fa6f9b 20%, #fa6f9b 25%, #fa6f9b 30%, #fa6f9b 35%, #fa6f9b 40%, #fa6f9b 45%, #fa6f9b 50%, #fa6f9b 55%, #fa6f9b 60%, #fa6f9b 65%, #fa6f9b 70%, #fa6f9b 75%, #fa6f9b 80%, #fa6f9b 85%, #fa6f9b 90%, #ff9ebe 95%, #ffc3d6 95%, #fedfdf 100%); }
   100% {
     background: linear-gradient(122deg, #fa6f9b 0%, #fa6f9b 5%, #fa6f9b 10%, #fa6f9b 15%, #fa6f9b 20%, #fa6f9b 25%, #fa6f9b 30%, #fa6f9b 35%, #fa6f9b 40%, #fa6f9b 45%, #fa6f9b 50%, #fa6f9b 55%, #fa6f9b 60%, #fa6f9b 65%, #fa6f9b 70%, #fa6f9b 75%, #fa6f9b 80%, #fa6f9b 85%, #fa6f9b 90%, #fa6f9b 95%, #fa6f9b 95%, #fa6f9b 100%); } }
+=======
+    background: linear-gradient(90deg, #005912 0%, #005912 10%, #00881c 20%, #00d42a 30%, #00d42a 40%, #00d42a 50%, #00d42a 60%, #00d42a 70%, #00d42a 80%, #00d42a 90%, #00d42a 100%); }
+  10% {
+    background: linear-gradient(90deg, #00881c 0%, #005912 10%, #005912 20%, #00881c 30%, #00d42a 40%, #00d42a 50%, #00d42a 60%, #00d42a 70%, #00d42a 80%, #00d42a 90%, #00d42a 100%); }
+  20% {
+    background: linear-gradient(90deg, #00d42a 0%, #00881c 10%, #005912 20%, #005912 30%, #00881c 40%, #00d42a 50%, #00d42a 60%, #00d42a 70%, #00d42a 80%, #00d42a 90%, #00d42a 100%); }
+  30% {
+    background: linear-gradient(90deg, #00d42a 0%, #00d42a 10%, #00881c 20%, #005912 30%, #005912 40%, #00881c 50%, #00d42a 60%, #00d42a 70%, #00d42a 80%, #00d42a 90%, #00d42a 100%); }
+  40% {
+    background: linear-gradient(90deg, #00d42a 0%, #00d42a 10%, #00d42a 20%, #00881c 30%, #005912 40%, #005912 50%, #00881c 60%, #00d42a 70%, #00d42a 80%, #00d42a 90%, #00d42a 100%); }
+  50% {
+    background: linear-gradient(90deg, #00d42a 0%, #00d42a 10%, #00d42a 20%, #00d42a 30%, #00881c 40%, #005912 50%, #005912 60%, #00881c 70%, #00d42a 80%, #00d42a 90%, #00d42a 100%); }
+  60% {
+    background: linear-gradient(90deg, #00d42a 0%, #00d42a 10%, #00d42a 20%, #00d42a 30%, #00d42a 40%, #00881c 50%, #005912 60%, #005912 70%, #00881c 80%, #00d42a 90%, #00d42a 100%); }
+  70% {
+    background: linear-gradient(90deg, #00d42a 0%, #00d42a 10%, #00d42a 20%, #00d42a 30%, #00d42a 40%, #00d42a 50%, #00881c 60%, #005912 70%, #005912 80%, #00881c 90%, #00d42a 100%); }
+  80% {
+    background: linear-gradient(90deg, #00d42a 0%, #00d42a 10%, #00d42a 20%, #00d42a 30%, #00d42a 40%, #00d42a 50%, #00d42a 60%, #00881c 70%, #005912 80%, #005912 90%, #00881c 100%); }
+  90% {
+    background: linear-gradient(90deg, #00d42a 0%, #00d42a 10%, #00d42a 20%, #00d42a 30%, #00d42a 40%, #00d42a 50%, #00d42a 60%, #00d42a 70%, #00881c 80%, #005912 90%, #005912 100%); }
+  100% {
+    background: linear-gradient(90deg, #00d42a 0%, #00d42a 10%, #00d42a 20%, #00d42a 30%, #00d42a 40%, #00d42a 50%, #00d42a 60%, #00d42a 70%, #00d42a 80%, #00881c 90%, #005912 100%); } }
+>>>>>>> 4a2c78bc8668733fc298c22fe84a2cf53caa95b1
 
 /*Inicio header*/
 header {
@@ -53,11 +77,18 @@ header {
   border-bottom: 1px solid black;
   position: sticky;
   top: 0;
+<<<<<<< HEAD
   background-color: #fa6f9b;
   animation-name: fondo_h_f;
   animation-duration: 2.2s;
   animation-iteration-count: infinite;
   z-index: 10; }
+=======
+  background-color: #00d92b;
+  animation-name: fondo_h_f;
+  animation-duration: 1.7s;
+  animation-iteration-count: infinite; }
+>>>>>>> 4a2c78bc8668733fc298c22fe84a2cf53caa95b1
   header li {
     margin: 5px; }
     header li a {
@@ -65,7 +96,11 @@ header {
       font-size: 1rem;
       display: block;
       text-decoration: none;
+<<<<<<< HEAD
       background-color: #ff3e7a;
+=======
+      background-color: #00e62e;
+>>>>>>> 4a2c78bc8668733fc298c22fe84a2cf53caa95b1
       color: black;
       border-radius: 10px;
       text-align: center;
@@ -73,7 +108,11 @@ header {
       border: 1px solid black; }
       header li a:hover {
         color: white;
+<<<<<<< HEAD
         background-color: #ff0050; }
+=======
+        background-color: #00851a; }
+>>>>>>> 4a2c78bc8668733fc298c22fe84a2cf53caa95b1
 
 /*Fin header*/
 /*Inicio Footer*/
@@ -81,7 +120,11 @@ footer {
   padding: 5px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+<<<<<<< HEAD
   background-color: #fa6f9b;
+=======
+  background-color: #00d92b;
+>>>>>>> 4a2c78bc8668733fc298c22fe84a2cf53caa95b1
   animation-name: fondo_h_f;
   animation-duration: 1.7s;
   animation-iteration-count: infinite; }
@@ -102,7 +145,11 @@ footer {
     footer .divRedes a {
       text-decoration: none;
       color: black;
+<<<<<<< HEAD
       background-color: #ff3e7a;
+=======
+      background-color: #00e62e;
+>>>>>>> 4a2c78bc8668733fc298c22fe84a2cf53caa95b1
       border: 1px solid black;
       font-size: 1rem;
       border-radius: 50%;
@@ -111,16 +158,34 @@ footer {
       line-height: 50px; }
       footer .divRedes a:hover {
         color: white;
+<<<<<<< HEAD
         background-color: #ff0050; }
+=======
+        background-color: #00851a; }
+>>>>>>> 4a2c78bc8668733fc298c22fe84a2cf53caa95b1
   footer .divCont {
     text-align: center; }
     footer .divCont p {
       text-decoration: underline; }
 
 /*Fin Footer*/
+<<<<<<< HEAD
 body {
   font-family: 'Fredoka', sans-serif;
   background-color: #fa6f9b; }
+=======
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: 'Fredoka', sans-serif;
+  font-family: 'Ubuntu', sans-serif; }
+
+body {
+  font-family: 'Fredoka', sans-serif;
+  background-color: #d61a57; }
+>>>>>>> 4a2c78bc8668733fc298c22fe84a2cf53caa95b1
 
 .imgLogo {
   width: 150px; }
@@ -145,6 +210,7 @@ main .secTurnos table .selecTurnos, main .secCon form .selectContacto {
   background-color: #00e62e;
   font-size: 1rem;
   text-align: center; }
+<<<<<<< HEAD
 
 main .titPrin, main .secInicio h2 {
   text-align: center;
@@ -173,6 +239,8 @@ main .titPrin, main .secInicio h2 {
 @media (min-width: 1200px) {
   main .secInicio p {
     font-size: 1.2rem; } }
+=======
+>>>>>>> 4a2c78bc8668733fc298c22fe84a2cf53caa95b1
 
 main {
   min-height: 90vh;
@@ -181,6 +249,16 @@ main {
   background-repeat: repeat;
   background-size: cover;
   padding: 15px; }
+<<<<<<< HEAD
+=======
+  main .titPrin {
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 3px 3px 0px black, 2px 2px 0px black, 1px 1px 0px black;
+    text-decoration: underline;
+    letter-spacing: 1px; }
+>>>>>>> 4a2c78bc8668733fc298c22fe84a2cf53caa95b1
   main .secInicio {
     padding: 0px 30px; }
     main .secInicio p {
@@ -188,6 +266,7 @@ main {
       color: white;
       text-align: center;
       border-radius: 15px;
+<<<<<<< HEAD
       padding: 15px; }
       main .secInicio p a {
         color: white; }
@@ -196,6 +275,12 @@ main {
         color: pink; } }
     main .secInicio h5 {
       text-align: center; }
+=======
+      padding: 15px;
+      font-size: 1.1rem; }
+      main .secInicio p a {
+        color: white; }
+>>>>>>> 4a2c78bc8668733fc298c22fe84a2cf53caa95b1
   main .secNosotros {
     padding: 0px 5%; }
     main .secNosotros h2 {
@@ -222,6 +307,7 @@ main {
       margin: 15px; }
       main .secNosotros .divMapa img {
         width: 60%; }
+<<<<<<< HEAD
   @media (min-width: 0) {
     main .secGal .divGal .foto {
       width: 90%; } }
@@ -237,12 +323,15 @@ main {
   @media (min-width: 1200px) {
     main .secGal .divGal .foto {
       width: 45%; } }
+=======
+>>>>>>> 4a2c78bc8668733fc298c22fe84a2cf53caa95b1
   main .secGal .divGal {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; }
+<<<<<<< HEAD
     main .secGal .divGal .foto {
       height: 350px;
       overflow: hidden;
@@ -259,6 +348,15 @@ main {
         transition: all 500ms ease; }
         main .secGal .divGal .foto img:hover {
           transform: scale(1.05); }
+=======
+    main .secGal .divGal img {
+      margin: 5px 5px;
+      width: max-content;
+      transition: all 500ms ease;
+      overflow: hidden; }
+      main .secGal .divGal img:hover {
+        transform: scale(1.1); }
+>>>>>>> 4a2c78bc8668733fc298c22fe84a2cf53caa95b1
   main .secTurnos {
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 20px; }
