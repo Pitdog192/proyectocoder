@@ -1,25 +1,16 @@
-@use 'headerFooter';
-
+@import 'headerFooter';
+@import 'mediaQuerys';
 
 $border: 1px solid black;
 $bgc:rgba(0, 0, 0,0.6);
 $white:white;
 $center:center;
 
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-family: 'Fredoka', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
-}
-
 // COSAS VARIAS
 //...........//
 body {
 	font-family: 'Fredoka', sans-serif;
-	background-color: #d61a57;
+	background-color: #fa6f9b;
 }
 
 .imgLogo {
@@ -51,6 +42,34 @@ body {
     text-align: center;
 }
 
+%titulos {
+    text-align: $center;
+    font-size: 2.5rem;
+    color: $white;
+    text-shadow: 3px 3px 0px black, 2px 2px 0px black, 1px 1px 0px black;
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+%fnt {
+    @include xs{
+        font-size: 1rem;
+    }
+    @include sm{
+        font-size: 2rem;
+    }
+    @include md{
+        font-size: 1.8rem;
+    }
+    @include lg{
+        font-size: 1.4rem;
+    }
+    @include xl{
+        font-size: 1.2rem;
+    }
+}
+
+
 //Map
 $divNosotros:(  1: flex,
                 2: column,
@@ -77,12 +96,7 @@ main {
     background-size: cover;
 	padding: 15px;
     .titPrin{
-        text-align: $center;
-        font-size: 2.5rem;
-        color: $white;
-        text-shadow: 3px 3px 0px black, 2px 2px 0px black, 1px 1px 0px black;
-        text-decoration: underline;
-        letter-spacing: 1px;
+        @extend %titulos;
     }
     .secInicio{
         padding: 0px 30px;
@@ -90,7 +104,19 @@ main {
             @include colores($bgc, $white , $center );
             border-radius: 15px;
             padding: 15px;
-            font-size: 1.1rem;
+            @extend %fnt;
+            a{
+                color: $white;
+            }
+        }
+        h2{
+            @extend %titulos;
+            @include sm {
+                color:pink;
+            }
+        }
+        h5{
+            text-align: $center;
         }
     }
 
@@ -131,6 +157,24 @@ main {
 
 //INICIO DE GALERIA
 //...............//
+%img {
+    @include xs{
+        width: 90%;
+    }
+    @include sm{
+        width: 90%;
+    }
+    @include md{
+        width: 85%;
+    }
+    @include lg{
+        width: 45%;
+    }
+    @include xl{
+        width: 45%;
+    }
+}
+
     .secGal{
         .divGal {
             display: flex;
@@ -138,13 +182,24 @@ main {
             justify-content: $center;
             align-items: $center;
             flex-wrap: wrap;
-            img{
-                margin: 5px 5px;
-        		width: max-content;
-        		transition: all 500ms ease;
-        		overflow: hidden;
-                &:hover{
-                    transform: scale(1.1);
+            .foto{
+                @extend %img;
+                height: 350px;
+                overflow: hidden;
+                margin: 5px;
+                background-color: $bgc;
+                border-radius: 25px;
+                display: flex;
+                flex-direction: row;
+                justify-content: $center;
+                align-items: $center;
+                img{
+                    height: 100%;
+                    border-radius: 25px;
+                    transition: all 500ms ease;
+                    &:hover{
+                        transform: scale(1.05);
+                    }
                 }
             }
         } 
@@ -221,6 +276,7 @@ main {
         }
     }
 }
+
 
 
 
