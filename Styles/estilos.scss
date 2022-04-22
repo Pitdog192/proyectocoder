@@ -1,0 +1,323 @@
+@import 'headerFooter';
+<<<<<<< HEAD
+@import 'mediaQuerys';
+=======
+>>>>>>> 4a2c78bc8668733fc298c22fe84a2cf53caa95b1
+
+$border: 1px solid black;
+$bgc:rgba(0, 0, 0,0.6);
+$white:white;
+$center:center;
+
+// COSAS VARIAS
+//...........//
+body {
+	font-family: 'Fredoka', sans-serif;
+	background-color: #fa6f9b;
+}
+
+.imgLogo {
+    width: 150px;
+}
+
+.btnSub{
+    margin-top: 30px;
+    margin-left: 10px;
+    color: black;
+    background-color: #00e62e;
+    text-transform: bold;
+    font-size: 1rem;
+    height: 40px;
+    border: $border;
+    border-radius: 5px;
+    width: 20%;
+    &:hover{
+        color: $white;
+        transform: scale(1.1);
+        background: #00851a;
+    }
+}
+
+//Extend
+%select {
+    background-color: #00e62e;
+    font-size: 1rem;
+    text-align: center;
+}
+
+%titulos {
+    text-align: $center;
+    font-size: 2.5rem;
+    color: $white;
+    text-shadow: 3px 3px 0px black, 2px 2px 0px black, 1px 1px 0px black;
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+%fnt {
+    @include xs{
+        font-size: 1rem;
+    }
+    @include sm{
+        font-size: 2rem;
+    }
+    @include md{
+        font-size: 1.8rem;
+    }
+    @include lg{
+        font-size: 1.4rem;
+    }
+    @include xl{
+        font-size: 1.2rem;
+    }
+}
+
+
+//Map
+$divNosotros:(  1: flex,
+                2: column,
+                3: $center,
+                4: $center,
+                5: $center,
+                6: 15px);
+
+//mixin con variable
+@mixin colores ($background, $color, $align) {
+    background-color: $background;
+    color: $color;
+    text-align: $align;
+}              
+                
+// FIN VARIOS
+//.........//
+
+main {
+    min-height: 90vh;
+    background-image: url(https://f.vividscreen.info/soft/5fd8414f8b1962b432d5de9b502c2c71/Colorful-Nails-1920x1200.jpg);
+	background-position: $center;
+    background-repeat: repeat;
+    background-size: cover;
+	padding: 15px;
+    .titPrin{
+        @extend %titulos;
+    }
+    .secInicio{
+        padding: 0px 30px;
+        p{
+            @include colores($bgc, $white , $center );
+            border-radius: 15px;
+            padding: 15px;
+<<<<<<< HEAD
+            @extend %fnt;
+            a{
+                color: $white;
+            }
+        }
+        h2{
+            @extend %titulos;
+            @include sm {
+                color:pink;
+            }
+        }
+        h5{
+            text-align: $center;
+=======
+            font-size: 1.1rem;
+            a{
+                color: $white;
+            }
+>>>>>>> 4a2c78bc8668733fc298c22fe84a2cf53caa95b1
+        }
+    }
+
+//INICIO DE NOSOTROS
+//................//
+    .secNosotros{
+        padding: 0px 5%;
+        h2 {
+            @include colores($bgc, $white , $center );
+            width: 40%;
+            border-radius: 15px;
+        }
+        .divIframe{
+            display: map-get($divNosotros, 1);
+            flex-direction: map-get($divNosotros, 2 );
+            justify-content: map-get($divNosotros, 3 );
+            align-items: map-get($divNosotros, 4 );
+            text-align: map-get($divNosotros, 5 );
+            margin: map-get($divNosotros, 6 );
+            iframe {
+                max-width: 100%;
+            }
+        }
+        .divMapa{
+            display: map-get($divNosotros, 1);
+            flex-direction: map-get($divNosotros, 2 );
+            justify-content: map-get($divNosotros, 3 );
+            align-items: map-get($divNosotros, 4 );
+            text-align: map-get($divNosotros, 5 );
+            margin: map-get($divNosotros, 6 );
+            img {
+                width: 60%;
+            }
+        }
+    }
+//FIN NOSOTROS
+//..........//
+
+//INICIO DE GALERIA
+//...............//
+%img {
+    @include xs{
+        width: 90%;
+    }
+    @include sm{
+        width: 90%;
+    }
+    @include md{
+        width: 85%;
+    }
+    @include lg{
+        width: 45%;
+    }
+    @include xl{
+        width: 45%;
+    }
+}
+
+    .secGal{
+        .divGal {
+            display: flex;
+            flex-direction: row;
+            justify-content: $center;
+            align-items: $center;
+            flex-wrap: wrap;
+            .foto{
+                @extend %img;
+                height: 350px;
+                overflow: hidden;
+                margin: 5px;
+                background-color: $bgc;
+                border-radius: 25px;
+                display: flex;
+                flex-direction: row;
+                justify-content: $center;
+                align-items: $center;
+                img{
+                    height: 100%;
+                    border-radius: 25px;
+                    transition: all 500ms ease;
+                    &:hover{
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        } 
+    }   
+//FIN GALERIA
+//.........//
+
+//INICIO TURNOS
+//...........// 
+    .secTurnos{
+        background-color: $bgc;
+        border-radius: 20px;
+        h2,p,th{
+            color: $white;
+            text-align: $center;
+        }
+        form{
+            padding: 30px;
+            text-align: $center;
+            }
+            table{
+                @include colores($bgc,$white ,$center);
+                border: 2px solid rgba(255,255,255,0.9);
+                margin: auto;
+                width: 70%;
+                padding: 15px;
+                height: 15vh;
+                .selecTurnos {
+                    @extend %select;
+                    width: 40%;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+                tr{
+                    border-bottom: 1px solid white;
+                }
+            }
+    }
+
+    //INICIO CONTACTO
+    //.............// 
+
+    .secCon{
+        form {
+            text-align: center;
+            background-color: $bgc;
+            border-radius: 15px;
+            padding: 15px;
+            width: 50%;
+            margin: auto;
+            legend, label{
+                color: $white;
+                margin: 3px 0px 3px 15px;
+            }
+            input,textarea{
+                margin: 5px;
+                text-align: $center;
+                background-color: #00ff33;
+                resize: none;
+                border-radius: 25px;
+                &::placeholder{
+                    color: rgba(0, 0, 0,0.7);
+                }
+            }
+            .selectContacto{
+                @extend %select;
+                width: 9%;
+                border-radius: 20px;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+En el archivo index.html y todas las páginas de mi sitio agregué:
+La etiqueta meta description, explicando el contenido del sitio y el contenido que trae cada página.
+Con la etiqueta meta agregué keywords de mi sitio "uñas, manicura, estética, manos, esmalte, argentina".
+Cambie el title a "Manicura Profesional" y cada una con su respectiva sección.
