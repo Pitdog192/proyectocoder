@@ -1,0 +1,108 @@
+@import 'mediaQuerys';
+$border: 1px solid black;
+
+@keyframes fondo_h_f{
+    0%  {background: linear-gradient(90deg, rgba(0,89,18,1) 0%, rgba(0,89,18,1) 10%, rgba(0,136,28,1) 20%, rgba(0,212,42,1) 30%, rgba(0,212,42,1) 40%, rgba(0,212,42,1) 50%, rgba(0,212,42,1) 60%, rgba(0,212,42,1) 70%, rgba(0,212,42,1) 80%, rgba(0,212,42,1) 90%, rgba(0,212,42,1) 100%);}
+    10% {background: linear-gradient(90deg, rgba(0,136,28,1) 0%, rgba(0,89,18,1) 10%, rgba(0,89,18,1) 20%, rgba(0,136,28,1) 30%, rgba(0,212,42,1) 40%, rgba(0,212,42,1) 50%, rgba(0,212,42,1) 60%, rgba(0,212,42,1) 70%, rgba(0,212,42,1) 80%, rgba(0,212,42,1) 90%, rgba(0,212,42,1) 100%);}
+    20% {background: linear-gradient(90deg, rgba(0,212,42,1) 0%, rgba(0,136,28,1) 10%, rgba(0,89,18,1) 20%, rgba(0,89,18,1) 30%, rgba(0,136,28,1) 40%, rgba(0,212,42,1) 50%, rgba(0,212,42,1) 60%, rgba(0,212,42,1) 70%, rgba(0,212,42,1) 80%, rgba(0,212,42,1) 90%, rgba(0,212,42,1) 100%);}
+    30% {background: linear-gradient(90deg, rgba(0,212,42,1) 0%, rgba(0,212,42,1) 10%, rgba(0,136,28,1) 20%, rgba(0,89,18,1) 30%, rgba(0,89,18,1) 40%, rgba(0,136,28,1) 50%, rgba(0,212,42,1) 60%, rgba(0,212,42,1) 70%, rgba(0,212,42,1) 80%, rgba(0,212,42,1) 90%, rgba(0,212,42,1) 100%);}
+    40% {background: linear-gradient(90deg, rgba(0,212,42,1) 0%, rgba(0,212,42,1) 10%, rgba(0,212,42,1) 20%, rgba(0,136,28,1) 30%, rgba(0,89,18,1) 40%, rgba(0,89,18,1) 50%, rgba(0,136,28,1) 60%, rgba(0,212,42,1) 70%, rgba(0,212,42,1) 80%, rgba(0,212,42,1) 90%, rgba(0,212,42,1) 100%);}
+    50% {background: linear-gradient(90deg, rgba(0,212,42,1) 0%, rgba(0,212,42,1) 10%, rgba(0,212,42,1) 20%, rgba(0,212,42,1) 30%, rgba(0,136,28,1) 40%, rgba(0,89,18,1) 50%, rgba(0,89,18,1) 60%, rgba(0,136,28,1) 70%, rgba(0,212,42,1) 80%, rgba(0,212,42,1) 90%, rgba(0,212,42,1) 100%);}
+    60% {background: linear-gradient(90deg, rgba(0,212,42,1) 0%, rgba(0,212,42,1) 10%, rgba(0,212,42,1) 20%, rgba(0,212,42,1) 30%, rgba(0,212,42,1) 40%, rgba(0,136,28,1) 50%, rgba(0,89,18,1) 60%, rgba(0,89,18,1) 70%, rgba(0,136,28,1) 80%, rgba(0,212,42,1) 90%, rgba(0,212,42,1) 100%);}
+    70% {background: linear-gradient(90deg, rgba(0,212,42,1) 0%, rgba(0,212,42,1) 10%, rgba(0,212,42,1) 20%, rgba(0,212,42,1) 30%, rgba(0,212,42,1) 40%, rgba(0,212,42,1) 50%, rgba(0,136,28,1) 60%, rgba(0,89,18,1) 70%, rgba(0,89,18,1) 80%, rgba(0,136,28,1) 90%, rgba(0,212,42,1) 100%);}
+    80% {background: linear-gradient(90deg, rgba(0,212,42,1) 0%, rgba(0,212,42,1) 10%, rgba(0,212,42,1) 20%, rgba(0,212,42,1) 30%, rgba(0,212,42,1) 40%, rgba(0,212,42,1) 50%, rgba(0,212,42,1) 60%, rgba(0,136,28,1) 70%, rgba(0,89,18,1) 80%, rgba(0,89,18,1) 90%, rgba(0,136,28,1) 100%);}
+    90% {background: linear-gradient(90deg, rgba(0,212,42,1) 0%, rgba(0,212,42,1) 10%, rgba(0,212,42,1) 20%, rgba(0,212,42,1) 30%, rgba(0,212,42,1) 40%, rgba(0,212,42,1) 50%, rgba(0,212,42,1) 60%, rgba(0,212,42,1) 70%, rgba(0,136,28,1) 80%, rgba(0,89,18,1) 90%, rgba(0,89,18,1) 100%);}
+    100%{background: linear-gradient(90deg, rgba(0,212,42,1) 0%, rgba(0,212,42,1) 10%, rgba(0,212,42,1) 20%, rgba(0,212,42,1) 30%, rgba(0,212,42,1) 40%, rgba(0,212,42,1) 50%, rgba(0,212,42,1) 60%, rgba(0,212,42,1) 70%, rgba(0,212,42,1) 80%, rgba(0,136,28,1) 90%, rgba(0,89,18,1) 100%);}
+}
+
+/*Inicio header*/
+
+header{
+	padding: 5px;
+	border-top: $border;
+	border-bottom: $border;
+	position: sticky;
+	top: 0;
+	background-color: #00d92b;
+	animation-name: fondo_h_f;
+	animation-duration: 1.7s;
+	animation-iteration-count: infinite;
+    z-index: 10;
+    li{
+        margin: 5px;
+        a {
+            padding: 5px 10px;
+            font-size: 1rem;
+            display: block;
+            text-decoration: none;
+            background-color: #00e62e;
+            color: black;
+            border-radius: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            border: $border;
+            &:hover{
+                color: white;
+                background-color: #00851a;
+            }
+        }
+    }
+}
+/*Fin header*/
+
+
+/*Inicio Footer*/
+
+footer {
+    padding: 5px;
+	border-top: $border;
+	border-bottom: $border;
+    background-color: #00d92b;
+	animation-name: fondo_h_f;
+	animation-duration: 1.7s;
+	animation-iteration-count: infinite;
+    .divRedes {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas:"titulo titulo titulo" 
+                            "instagram facebook twitter";
+                            .titulo{grid-area: titulo;} .instagram{grid-area: instagram;} .facebook{grid-area: facebook;} .twitter{grid-area: twitter;}
+        a{
+            text-decoration: none;
+            color: black;
+            background-color: #00e62e;
+            border: $border;
+            font-size: 1rem;
+            border-radius: 50%;
+            justify-self: center;
+            width: 75%;
+            line-height: 50px;
+            &:hover{
+                color: white;
+                background-color: #00851a;
+            }
+        }                    
+    }
+    .divCont{
+        text-align: center;
+        p{
+            text-decoration: underline;
+        }
+    }
+    
+    
+
+}
+
+/*Fin Footer*/
+
+
+
+
+
+
+
+
+
